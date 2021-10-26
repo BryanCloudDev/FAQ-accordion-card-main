@@ -7,4 +7,34 @@ html {
   font-size: 62.5%;
   font-family: "Kumbh Sans", sans-serif; }
 
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: #af67e9;
+  background: linear-gradient(180deg, #af67e9 16%, #6565e7 100%);
+  display: flex;
+  align-items: center;
+  padding-top: calc(63% / 2); }
+  .main .card {
+    width: 85%;
+    margin: 3rem auto;
+    background: #e7e7e9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2.5rem; }
+    .main .card .imgContainer {
+      background-image: url("../images/bg-pattern-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center top 10rem;
+      background-size: 100%;
+      margin-top: calc(-1 * calc(63% / 2));
+      width: 70%;
+      padding-bottom: 3.9rem; }
+      .main .card .imgContainer img {
+        width: 100%; }
+    .main .card .title {
+      font-size: 3rem;
+      margin-top: 1.5rem; }
+
 /*# sourceMappingURL=style.css.map */
