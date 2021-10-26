@@ -36,5 +36,38 @@ html {
     .main .card .title {
       font-size: 3rem;
       margin-top: 1.5rem; }
+    .main .card .questions {
+      width: 87%;
+      margin: 2rem 0rem; }
+      .main .card .questions li {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        width: 100%; }
+        .main .card .questions li label {
+          width: 95%; }
+          .main .card .questions li label .qTitle {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin: 1rem 0rem 3rem;
+            color: #4a4b5e; }
+        .main .card .questions li .text {
+          width: 95%;
+          display: none;
+          font-size: 1.2rem;
+          color: #787887; }
+        .main .card .questions li input {
+          display: none; }
+          .main .card .questions li input:checked ~ .text {
+            display: block;
+            margin: 0rem 0rem 3rem; }
+          .main .card .questions li input:checked ~ label .qTitle {
+            font-weight: 700;
+            color: #1d1e35;
+            margin: 1rem 0rem 1rem; }
+        .main .card .questions li div {
+          width: 5%;
+          height: auto;
+          margin-top: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
