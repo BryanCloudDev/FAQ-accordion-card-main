@@ -14,7 +14,7 @@ html {
   background: linear-gradient(180deg, #af67e9 16%, #6565e7 100%);
   display: flex;
   align-items: center;
-  padding-top: calc(63% / 2); }
+  padding-top: calc(30% / 2); }
   .main .card {
     width: 85%;
     margin: 3rem auto;
@@ -23,7 +23,8 @@ html {
     align-items: center;
     flex-direction: column;
     border-radius: 2.5rem;
-    padding-bottom: 5rem; }
+    padding-bottom: 4.8rem;
+    max-width: 31.87rem; }
     .main .card .imgContainer {
       background-image: url("../images/bg-pattern-mobile.svg");
       background-repeat: no-repeat;
@@ -44,20 +45,23 @@ html {
         display: flex;
         list-style: none;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
         border-bottom: 0.1rem solid #dcdce5;
         padding: 1.8rem 0rem; }
         .main .card .questions .question label li .qaContainer .qTitle {
           font-size: 1.3rem;
           font-weight: 400;
-          color: #4a4b5e; }
+          color: #4a4b5e;
+          width: 100%; }
         .main .card .questions .question label li .qaContainer .text {
+          margin-top: 2rem;
           width: 95%;
           display: none;
           font-size: 1.2rem;
           color: #787887; }
         .main .card .questions .question label li .arrow {
-          margin-top: 0.1rem; }
+          align-self: self-start; }
       .main .card .questions .question input {
         display: none; }
         .main .card .questions .question input:checked ~ label li .qaContainer .text {
@@ -65,5 +69,8 @@ html {
         .main .card .questions .question input:checked ~ label li .qaContainer .qTitle {
           font-weight: 700;
           color: #1d1e35; }
+        .main .card .questions .question input:checked ~ label li .arrow {
+          transform: rotate(180deg);
+          transition: ease 0.2s; }
 
 /*# sourceMappingURL=style.css.map */

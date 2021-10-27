@@ -5,7 +5,7 @@
     background: linear-gradient(180deg, $ThirdColor 16%, $FourthColor 100%)
     display: flex
     align-items: center
-    padding-top: calc(63% / 2)
+    padding-top: calc(30% / 2)
     .card
         width: 85%
         margin: 3rem auto
@@ -14,7 +14,8 @@
         align-items: center
         flex-direction: column
         border-radius: 2.5rem
-        padding-bottom: 5rem
+        padding-bottom: 4.8rem
+        max-width: 31.87rem
         .imgContainer
             background-image: url('../images/bg-pattern-mobile.svg')
             background-repeat: no-repeat
@@ -37,6 +38,7 @@
                         display: flex
                         list-style: none
                         justify-content: space-between
+                        align-items: center
                         width: 100%
                         border-bottom: 0.1rem solid #dcdce5
                         padding: 1.8rem 0rem
@@ -45,13 +47,15 @@
                                 font-size: 1.3rem
                                 font-weight: 400
                                 color: $FifthColor
+                                width: 100%
                             .text
+                                margin-top: 2rem
                                 width: 95%
                                 display: none
                                 font-size: $FontSize
                                 color: $SixthColor
                         .arrow
-                            margin-top: 0.1rem
+                            align-self: self-start
                 input
                     display: none
                     &:checked ~ label li .qaContainer .text
@@ -59,3 +63,6 @@
                     &:checked ~ label li .qaContainer .qTitle
                         font-weight: 700
                         color: $FirstColor
+                    &:checked ~ label li .arrow
+                        transform: rotate(180deg)
+                        transition: ease 0.2s
