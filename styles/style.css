@@ -22,7 +22,8 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 2.5rem; }
+    border-radius: 2.5rem;
+    padding-bottom: 5rem; }
     .main .card .imgContainer {
       background-image: url("../images/bg-pattern-mobile.svg");
       background-repeat: no-repeat;
@@ -39,34 +40,30 @@ html {
     .main .card .questions {
       width: 87%;
       margin: 2rem 0rem; }
-      .main .card .questions li {
+      .main .card .questions .question label li {
         display: flex;
         list-style: none;
         justify-content: space-between;
         width: 100%;
         border-bottom: 0.1rem solid #dcdce5;
-        margin-top: 1.8rem;
-        padding-bottom: 1.8rem; }
-        .main .card .questions li .qaContainer label {
-          width: 95%; }
-          .main .card .questions li .qaContainer label .qTitle {
-            font-size: 1.3rem;
-            font-weight: 400;
-            color: #4a4b5e; }
-        .main .card .questions li .qaContainer .text {
+        padding: 1.8rem 0rem; }
+        .main .card .questions .question label li .qaContainer .qTitle {
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: #4a4b5e; }
+        .main .card .questions .question label li .qaContainer .text {
           width: 95%;
           display: none;
           font-size: 1.2rem;
           color: #787887; }
-        .main .card .questions li .qaContainer input {
-          display: none; }
-          .main .card .questions li .qaContainer input:checked ~ .text {
-            display: block;
-            margin: 0rem 0rem 3rem; }
-          .main .card .questions li .qaContainer input:checked ~ label .qTitle {
-            font-weight: 700;
-            color: #1d1e35; }
-        .main .card .questions li .arrow {
+        .main .card .questions .question label li .arrow {
           margin-top: 0.1rem; }
+      .main .card .questions .question input {
+        display: none; }
+        .main .card .questions .question input:checked ~ label li .qaContainer .text {
+          display: block; }
+        .main .card .questions .question input:checked ~ label li .qaContainer .qTitle {
+          font-weight: 700;
+          color: #1d1e35; }
 
 /*# sourceMappingURL=style.css.map */

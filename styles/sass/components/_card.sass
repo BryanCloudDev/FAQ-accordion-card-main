@@ -14,6 +14,7 @@
         align-items: center
         flex-direction: column
         border-radius: 2.5rem
+        padding-bottom: 5rem
         .imgContainer
             background-image: url('../images/bg-pattern-mobile.svg')
             background-repeat: no-repeat
@@ -30,33 +31,31 @@
         .questions
             width: 87%
             margin: 2rem 0rem
-            li
-                display: flex
-                list-style: none
-                justify-content: space-between
-                width: 100%
-                border-bottom: 0.1rem solid #dcdce5
-                margin-top: 1.8rem
-                padding-bottom: 1.8rem
-                .qaContainer
-                    label
-                        width: 95%
-                        .qTitle
-                            font-size: 1.3rem
-                            font-weight: 400
-                            color: $FifthColor
-                    .text
-                        width: 95%
-                        display: none
-                        font-size: $FontSize
-                        color: $SixthColor
-                    input
-                        display: none
-                        &:checked ~ .text
-                            display: block
-                            margin: 0rem 0rem 3rem
-                        &:checked ~ label .qTitle
-                            font-weight: 700
-                            color: $FirstColor
-                .arrow
-                    margin-top: 0.1rem
+            .question
+                label
+                    li
+                        display: flex
+                        list-style: none
+                        justify-content: space-between
+                        width: 100%
+                        border-bottom: 0.1rem solid #dcdce5
+                        padding: 1.8rem 0rem
+                        .qaContainer
+                            .qTitle
+                                font-size: 1.3rem
+                                font-weight: 400
+                                color: $FifthColor
+                            .text
+                                width: 95%
+                                display: none
+                                font-size: $FontSize
+                                color: $SixthColor
+                        .arrow
+                            margin-top: 0.1rem
+                input
+                    display: none
+                    &:checked ~ label li .qaContainer .text
+                        display: block
+                    &:checked ~ label li .qaContainer .qTitle
+                        font-weight: 700
+                        color: $FirstColor
