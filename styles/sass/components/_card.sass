@@ -32,31 +32,31 @@
             margin: 2rem 0rem
             li
                 display: flex
-                flex-wrap: wrap
                 list-style: none
+                justify-content: space-between
                 width: 100%
-                label
-                    width: 95%
-                    .qTitle
-                        font-size: 1.3rem
-                        font-weight: 400
-                        margin: 1rem 0rem 3rem
-                        color: $FifthColor
-                .text
-                    width: 95%
-                    display: none
-                    font-size: $FontSize
-                    color: $SixthColor
-                input
-                    display: none
-                    &:checked ~ .text
-                        display: block
-                        margin: 0rem 0rem 3rem
-                    &:checked ~ label .qTitle
-                        font-weight: 700
-                        color: $FirstColor
-                        margin: 1rem 0rem 1rem
-                div
-                    width: 5%
-                    height: auto
-                    margin-top: 1rem
+                border-bottom: 0.1rem solid #dcdce5
+                margin-top: 1.8rem
+                padding-bottom: 1.8rem
+                .qaContainer
+                    label
+                        width: 95%
+                        .qTitle
+                            font-size: 1.3rem
+                            font-weight: 400
+                            color: $FifthColor
+                    .text
+                        width: 95%
+                        display: none
+                        font-size: $FontSize
+                        color: $SixthColor
+                    input
+                        display: none
+                        &:checked ~ .text
+                            display: block
+                            margin: 0rem 0rem 3rem
+                        &:checked ~ label .qTitle
+                            font-weight: 700
+                            color: $FirstColor
+                .arrow
+                    margin-top: 0.1rem

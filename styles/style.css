@@ -41,33 +41,32 @@ html {
       margin: 2rem 0rem; }
       .main .card .questions li {
         display: flex;
-        flex-wrap: wrap;
         list-style: none;
-        width: 100%; }
-        .main .card .questions li label {
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 0.1rem solid #dcdce5;
+        margin-top: 1.8rem;
+        padding-bottom: 1.8rem; }
+        .main .card .questions li .qaContainer label {
           width: 95%; }
-          .main .card .questions li label .qTitle {
+          .main .card .questions li .qaContainer label .qTitle {
             font-size: 1.3rem;
             font-weight: 400;
-            margin: 1rem 0rem 3rem;
             color: #4a4b5e; }
-        .main .card .questions li .text {
+        .main .card .questions li .qaContainer .text {
           width: 95%;
           display: none;
           font-size: 1.2rem;
           color: #787887; }
-        .main .card .questions li input {
+        .main .card .questions li .qaContainer input {
           display: none; }
-          .main .card .questions li input:checked ~ .text {
+          .main .card .questions li .qaContainer input:checked ~ .text {
             display: block;
             margin: 0rem 0rem 3rem; }
-          .main .card .questions li input:checked ~ label .qTitle {
+          .main .card .questions li .qaContainer input:checked ~ label .qTitle {
             font-weight: 700;
-            color: #1d1e35;
-            margin: 1rem 0rem 1rem; }
-        .main .card .questions li div {
-          width: 5%;
-          height: auto;
-          margin-top: 1rem; }
+            color: #1d1e35; }
+        .main .card .questions li .arrow {
+          margin-top: 0.1rem; }
 
 /*# sourceMappingURL=style.css.map */
