@@ -61,7 +61,8 @@ html {
           font-size: 1.2rem;
           color: #787887; }
         .main .card .questions .question label li .arrow {
-          align-self: self-start; }
+          align-self: self-start;
+          transition: ease 0.2s; }
       .main .card .questions .question input {
         display: none; }
         .main .card .questions .question input:checked ~ label li .qaContainer .text {
@@ -70,7 +71,6 @@ html {
           font-weight: 700;
           color: #1d1e35; }
         .main .card .questions .question input:checked ~ label li .arrow {
-          transform: rotate(180deg);
-          transition: ease 0.2s; }
+          transform: rotate(180deg); }
 
 /*# sourceMappingURL=style.css.map */

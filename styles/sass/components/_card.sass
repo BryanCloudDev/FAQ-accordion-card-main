@@ -54,15 +54,18 @@
                                 display: none
                                 font-size: $FontSize
                                 color: $SixthColor
+                                //transform: translateY(1.8rem)
                         .arrow
                             align-self: self-start
+                            transition: ease 0.2s
                 input
                     display: none
                     &:checked ~ label li .qaContainer .text
                         display: block
+                        //transform: 
+                        //transition: linear 3s
                     &:checked ~ label li .qaContainer .qTitle
                         font-weight: 700
                         color: $FirstColor
                     &:checked ~ label li .arrow
                         transform: rotate(180deg)
-                        transition: ease 0.2s
