@@ -14,7 +14,7 @@ html {
   background: linear-gradient(180deg, #af67e9 16%, #6565e7 100%);
   display: flex;
   align-items: center;
-  padding-top: calc(30% / 2); }
+  padding-top: calc(45% / 2); }
   .main .card {
     width: 85%;
     margin: 3rem auto;
@@ -53,13 +53,15 @@ html {
           font-size: 1.3rem;
           font-weight: 400;
           color: #4a4b5e;
-          width: 100%; }
+          width: 100%;
+          transition: font-weight, color 2s; }
         .main .card .questions .question label li .qaContainer .text {
           margin-top: 2rem;
           width: 95%;
           display: none;
           font-size: 1.2rem;
-          color: #787887; }
+          color: #787887;
+          transition: display 1s; }
         .main .card .questions .question label li .arrow {
           align-self: self-start;
           transition: ease 0.2s; }
