@@ -15,56 +15,121 @@
         flex-direction: column
         border-radius: 2.5rem
         padding-bottom: 4.8rem
-        max-width: 31.87rem
+        max-width: 122rem
         .imgContainer
             background-image: url('../images/bg-pattern-mobile.svg')
             background-repeat: no-repeat
-            background-position: center top 10rem
-            background-size: 100%
+            background-position: center top calc(63% * 1.35)//10rem
+            background-size: 100% auto
             margin-top: calc(-1 * calc(63% / 2)) 
             width: 70%
             padding-bottom: 3.9rem
-            img
-                width: 100%
-        .title
-            font-size: 3rem
-            margin-top: 1.5rem
-        .questions
+            transition: background-position ease 1s
+            picture
+                .woman
+                    width: 100%
+            .box
+                display: none
+
+        .questionContainer
             width: 87%
-            margin: 2rem 0rem
-            .question
-                label
-                    li
-                        display: flex
-                        list-style: none
-                        justify-content: space-between
-                        align-items: center
-                        width: 100%
-                        border-bottom: 0.1rem solid #dcdce5
-                        padding: 1.8rem 0rem
-                        .qaContainer
-                            .qTitle
-                                font-size: 1.3rem
-                                font-weight: 400
-                                color: $FifthColor
-                                width: 100%
-                                transition: font-weight, color 2s
-                            .text
-                                margin-top: 2rem
-                                width: 95%
-                                display: none
-                                font-size: $FontSize
-                                color: $SixthColor
-                                transition: display 1s
-                        .arrow
-                            align-self: self-start
-                            transition: ease 0.2s
-                input
-                    display: none
-                    &:checked ~ label li .qaContainer .text
-                        display: block
-                    &:checked ~ label li .qaContainer .qTitle
-                        font-weight: 700
-                        color: $FirstColor
-                    &:checked ~ label li .arrow
-                        transform: rotate(180deg)
+            .title
+                font-size: 3rem
+                margin-top: 1.5rem
+                text-align: center
+            .questions
+                width: 100%
+                margin: 2rem 0rem
+                .question
+                    label
+                        li
+                            display: flex
+                            list-style: none
+                            justify-content: space-between
+                            align-items: center
+                            width: 100%
+                            border-bottom: 0.1rem solid #dcdce5
+                            padding: 1.8rem 0rem
+                            .qaContainer
+                                .qTitle
+                                    font-size: 1.3rem
+                                    font-weight: 400
+                                    color: $FifthColor
+                                    width: 100%
+                                    transition: font-weight, color 1s
+                                    &:active
+                                        color: $SecondColor
+                                        transition: none
+                                .text
+                                    margin-top: 2rem
+                                    width: 95%
+                                    display: none
+                                    font-size: $FontSize
+                                    color: $SixthColor
+                                    transition: display 1s
+                            .arrow
+                                align-self: self-start
+                                transition: ease 0.2s
+                    input
+                        display: none
+                        &:checked ~ label li .qaContainer .text
+                            display: block
+                        &:checked ~ label li .qaContainer .qTitle
+                            font-weight: 700
+                            color: $FirstColor
+                        &:checked ~ label li .arrow
+                            transform: rotate(180deg)
+
+@media screen and (min-width: 550px)
+    .main
+        .card
+            .imgContainer
+                    background-position: center top calc(63% * 1.45)
+@media screen and (min-width: 700px)
+    .main
+        .card
+            .questionContainer
+                .title
+                    font-size: 4rem
+                .questions
+                    .question
+                        label
+                            li
+                                .qaContainer
+                                    .qTitle
+                                        font-size: 2rem
+@media screen and (min-width: 1440px)
+    .main
+        justify-content: center
+        padding-top: 0
+        .card
+            display: flex
+            flex-direction: row
+            max-width: 80rem
+            padding-top: 4.8rem 
+            .imgContainer
+                width: 50%
+                background: none
+                margin-top: 0
+                padding: 0
+                position: relative
+                .imgWoman
+                    position: absolute
+                    top: -15.65rem
+                    overflow: hidden
+                    width: 100%
+                    .img
+                        position: relative                        
+                        left: -7rem
+                .box
+                    display: block
+                    position: absolute
+                    top: -5.9rem
+                    left: -9.4rem
+            .questionContainer
+                width: 50%
+                .title
+                    text-align: left
+                .questions
+                    width: 87%
+                    max-width: 34.23rem
