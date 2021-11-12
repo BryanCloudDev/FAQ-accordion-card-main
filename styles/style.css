@@ -27,7 +27,7 @@ html {
   flex-direction: column;
   border-radius: 2.5rem;
   padding-bottom: 4.8rem;
-  max-width: 122rem;
+  max-width: 80rem;
 }
 .main .card .imgContainer {
   background-image: url("../images/bg-pattern-mobile.svg");
@@ -37,7 +37,6 @@ html {
   margin-top: -31.5%;
   width: 70%;
   padding-bottom: 3.9rem;
-  transition: background-position ease 1s;
 }
 .main .card .imgContainer picture .woman {
   width: 100%;
@@ -113,7 +112,10 @@ html {
     font-size: 4rem;
   }
   .main .card .questionContainer .questions .question label li .qaContainer .qTitle {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  .main .card .questionContainer .questions .question label li .qaContainer .text {
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -124,7 +126,6 @@ html {
   .main .card {
     display: flex;
     flex-direction: row;
-    max-width: 80rem;
     padding-top: 4.8rem;
   }
   .main .card .imgContainer {
