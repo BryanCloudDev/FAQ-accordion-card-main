@@ -107,18 +107,7 @@ html {
     background-position: center top 91.35%;
   }
 }
-@media screen and (min-width: 700px) {
-  .main .card .questionContainer .title {
-    font-size: 4rem;
-  }
-  .main .card .questionContainer .questions .question label li .qaContainer .qTitle {
-    font-size: 1.6rem;
-  }
-  .main .card .questionContainer .questions .question label li .qaContainer .text {
-    font-size: 1.7rem;
-  }
-}
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 944px) {
   .main {
     justify-content: center;
     padding-top: 0;
@@ -127,17 +116,23 @@ html {
     display: flex;
     flex-direction: row;
     padding-top: 4.8rem;
+    background: url("../images/bg-pattern-desktop.svg"), #e7e7e9;
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    background-position: -7rem 1rem;
   }
   .main .card .imgContainer {
     width: 50%;
+    height: 35.8rem;
     background: none;
     margin-top: 0;
     padding: 0;
     position: relative;
+    overflow: visible;
   }
   .main .card .imgContainer .imgWoman {
     position: absolute;
-    top: -15.65rem;
+    top: 2rem;
     overflow: hidden;
     width: 100%;
   }
@@ -148,8 +143,9 @@ html {
   .main .card .imgContainer .box {
     display: block;
     position: absolute;
-    top: -5.9rem;
+    top: 12rem;
     left: -9.4rem;
+    width: 19.1rem;
   }
   .main .card .questionContainer {
     width: 50%;
