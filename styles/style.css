@@ -56,7 +56,7 @@ html {
   width: 100%;
   margin: 2rem 0rem;
 }
-.main .card .questionContainer .questions .question label .qa {
+.main .card .questionContainer .questions .question label li {
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -65,18 +65,18 @@ html {
   border-bottom: 0.1rem solid #dcdce5;
   padding: 1.8rem 0rem;
 }
-.main .card .questionContainer .questions .question label .qa .qaContainer .qTitle {
+.main .card .questionContainer .questions .question label li .qaContainer .qTitle {
   font-size: 1.3rem;
   font-weight: 400;
   color: #4a4b5e;
   width: 100%;
   transition: font-weight, color 1s;
 }
-.main .card .questionContainer .questions .question label .qa .qaContainer .qTitle:active {
+.main .card .questionContainer .questions .question label li .qaContainer .qTitle:active {
   color: #f47c57;
   transition: none;
 }
-.main .card .questionContainer .questions .question label .qa .qaContainer .text {
+.main .card .questionContainer .questions .question label li .qaContainer .text {
   margin-top: 2rem;
   width: 95%;
   display: none;
@@ -84,7 +84,7 @@ html {
   color: #787887;
   transition: display 1s;
 }
-.main .card .questionContainer .questions .question label .qa .arrow {
+.main .card .questionContainer .questions .question label li .arrow {
   align-self: self-start;
   transition: ease 0.2s;
 }
@@ -119,7 +119,7 @@ html {
     background: url("../images/bg-pattern-desktop.svg"), #e7e7e9;
     background-size: 40rem auto;
     background-repeat: no-repeat;
-    background-position: -7rem 1rem;
+    background-position: -7rem 39%;
   }
   .main .card .imgContainer {
     width: 50%;
